@@ -1,5 +1,6 @@
 # BingHomepageAPI
 This API helps you to gets the current Bing Homepage details including the Image URL and Image Copyright Information and use it.
+# [Website](http://muzzammil.xyz/git/bing/?ref=github).
 # [Documentation](http://muzzammil.xyz/git/bing/CSdocumentation.php?ref=github).
 # License
 Licensed under MIT License by (c) Muhammad Muzzammil 2017 (http://muzzammil.xyz/)
