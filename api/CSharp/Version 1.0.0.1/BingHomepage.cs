@@ -36,21 +36,29 @@ namespace BingHomepageAPI {
         /// </summary>
         /// <param name="CountryCode">Country Code for which you want the image. Default: US.</param>
         public BingHomepage(String CountryCode) {
-            xml = new XmlDocument();
-            xml.Load("http://cdn.muzzammil.xyz/bing/bing.php?format=xml&lang=CSharp&type=dll&cc=" + CountryCode);
-            url = xml.GetElementsByTagName("url")[0].InnerText;
-            copyright = xml.GetElementsByTagName("copyright")[0].InnerText;
-            copyrightLink = xml.GetElementsByTagName("copyrightlink")[0].InnerText;
+            try {
+                xml = new XmlDocument();
+                xml.Load("http://cdn.muzzammil.xyz/bing/bing.php?format=xml&lang=CSharp&type=dll&cc=" + CountryCode);
+                url = xml.GetElementsByTagName("url")[0].InnerText;
+                copyright = xml.GetElementsByTagName("copyright")[0].InnerText;
+                copyrightLink = xml.GetElementsByTagName("copyrightlink")[0].InnerText;
+            } catch (Exception) {
+                throw new Exception("See muzzammil.xyz/git/bing");
+            }
         }
         /// <summary>
         /// Initializes a new instance of the BingHomepageAPI.
         /// </summary>
         public BingHomepage() {
-            xml = new XmlDocument();
-            xml.Load("http://cdn.muzzammil.xyz/bing/bing.php?format=xml&lang=CSharp&type=dll&cc=US");
-            url = xml.GetElementsByTagName("url")[0].InnerText;
-            copyright = xml.GetElementsByTagName("copyright")[0].InnerText;
-            copyrightLink = xml.GetElementsByTagName("copyrightlink")[0].InnerText;
+            try {
+                xml = new XmlDocument();
+                xml.Load("http://cdn.muzzammil.xyz/bing/bing.php?format=xml&lang=CSharp&type=dll&cc=US");
+                url = xml.GetElementsByTagName("url")[0].InnerText;
+                copyright = xml.GetElementsByTagName("copyright")[0].InnerText;
+                copyrightLink = xml.GetElementsByTagName("copyrightlink")[0].InnerText;
+            } catch (Exception) {
+                throw new Exception("See muzzammil.xyz/git/bing");
+            }
         }
         /// <summary>
         /// Downloads, stores, and returns the current Homepage Image.
@@ -58,8 +66,12 @@ namespace BingHomepageAPI {
         /// <param name="path">Path to where the Image should be downloaded.</param>
         /// <returns>Returns the downloaded image data.</returns>
         public Image GetImage(String path) {
-            new WebClient().DownloadFile(url, path);
-            return new Bitmap(path);
+            try {
+                new WebClient().DownloadFile(url, path);
+                return new Bitmap(path);
+            } catch (Exception) {
+                throw new Exception("See muzzammil.xyz/git/bing");
+            }
         }
         /// <summary>
         /// Gets the image's URL on bing's server.
