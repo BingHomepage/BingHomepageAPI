@@ -22,6 +22,8 @@
 	$copyright = $xml->image[0]->copyright;
 	$copyrightlink = $xml->image[0]->copyrightlink;
 	$image = "https://bing.com" . $xml->image[0]->url;
+	$image = substr($image, 0, -12);
+	$image .= "1920x1080.jpg";
 	if($_GET["format"] == "xml"){
 		header('Content-type: text/xml');
 		$xml = simplexml_load_file("bing.xml");
