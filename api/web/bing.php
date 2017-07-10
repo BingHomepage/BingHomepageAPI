@@ -18,6 +18,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 <?php
+	$fname = "files/" . uniqid() . ".xml"; //Don't you worry about the mess.
+	file_put_contents($fname, '<?xml version="1.0" encoding="UTF-8"?><image><url></url><copyright></copyright><copyrightlink></copyrightlink></image>');
 	$xml = simplexml_load_file("http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1&mkt=en-" . $_GET['cc']) or die("Error: Cannot locate xml resource, please see muzzammil.xyz/git/bing.");
 	$copyright = $xml->image[0]->copyright;
 	$copyrightlink = $xml->image[0]->copyrightlink;
@@ -26,12 +28,12 @@
 	$image .= "1920x1080.jpg";
 	if($_GET["format"] == "xml"){
 		header('Content-type: text/xml');
-		$xml = simplexml_load_file("bing.xml");
+		$xml = simplexml_load_file($fname);
 		$xml->url = $image;
 		$xml->copyright = $copyright;
 		$xml->copyrightlink = $copyrightlink;
-		$xml->asXML("bing.xml");
-		readfile('bing.xml');
+		$xml->asXML($fname);
+		readfile($fname);
 	} else if($_GET['format'] == "text"){
 		echo "url>$image\ncopyright>$copyright\ncopyrightlink>$copyrightlink";
 	} else die("Invalid Format.");
