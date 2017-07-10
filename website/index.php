@@ -7,10 +7,12 @@
 			<br><br><br>	
 			<a class="btn" href="?lang=php">php</a>
 			<a class="btn" href="?lang=csharp">C#</a>
+			<a class="btn" href="?lang=golang">Go</a>
 			<a class="btn" href="?lang=api">Raw API</a>
 			<br><br><br><br>
 			<a class="btn" href="about.php">About</a>
 			<a class="btn" href="CSdocumentation.php">C# Documentation</a>
+			<a class="btn" href="GOdocumentation.php">Go Documentation</a>
 			<?php } else if(isset($lang)) { if($lang == "php"){ ?>
 			<h1>Using with php</h1>
 			<br>
@@ -32,6 +34,7 @@
 			</div>
 			<br><br>
 			<a class="btn" href="?lang=csharp">See code for C#</a>
+			<a class="btn" href="?lang=golang">See code for Go</a>
 			<a class="btn" href="?lang=api">See Raw API</a>
 			<?php } else if($lang == "csharp"){ ?>
 			<h1>Using with C#</h1>
@@ -49,9 +52,36 @@
 				</p>
 			</div>
 			<br><br>
-			<a class="btn" href="BingHomepageAPI-1-CS.zip">Download BingHomepageAPI v1.0 for C#.</a><br>
+			<a class="btn" href="BingHomepageAPI-1.0.0.1-CS.zip">Download BingHomepageAPI (latest) for C#.</a><br>
 			<br><br>
 			<a class="btn" href="?lang=php">See code for php</a>
+			<a class="btn" href="?lang=golang">See code for Go</a>
+			<a class="btn" href="?lang=api">See Raw API</a>
+			<?php } else if($lang == "golang") { ?>
+			<h1>Using with Go</h1>
+			<br><br>
+			<h1>
+				<a id="doc" href="GOdocumentation.php">Visit BingHomepageAPI Documentation for details on functions.</a>
+			</h1>
+			<div>
+				<p>
+					Step 1: Download or copy function from GitHub or the documentation.<br>
+					Step 2: Add the function to your Go code.<br>
+					Step 3: Add required imports.<br>
+					Step 4: Use.<br>
+					<div id="lang">Go</div>
+					<div class="code">
+						<span id="keyword">imports</span> ( <br>
+						<tab></tab><span id="quote">"io/ioutil"</span><br>
+						<tab></tab><span id="quote">"net/http"</span><br>
+						<tab></tab><span id="quote">"strings"</span><br>
+						)
+					</div>
+				</p>
+			</div>
+			<br><br>
+			<a class="btn" href="?lang=php">See code for php</a>
+			<a class="btn" href="?lang=csharp">See code for C#</a>
 			<a class="btn" href="?lang=api">See Raw API</a>
 			<?php } else if($lang == "api") { ?>
 			<h1>If you want to add a language, please contribute on our GitHub page.</h1>
@@ -69,7 +99,8 @@
 			</div>
 			<br><br>
 			<a class="btn" href="?lang=csharp">See code for C#</a>
-			<a class="btn" href="?lang=php">See code for php</a>
+			<a class="btn" href="?lang=php">See code for php</a>			
+			<a class="btn" href="?lang=golang">See code for Go</a>
 			<?php } } ?>
 		</center>
 	</div>
