@@ -36,5 +36,8 @@
 		readfile($fname);
 	} else if($_GET['format'] == "text"){
 		echo "url>$image\ncopyright>$copyright\ncopyrightlink>$copyrightlink";
+	} else if($_GET['format'] == "json") {
+		$json = '{ "url":"' . $image . '", "copyright":"' . $copyright . '", "copyrightlink":"' . $copyrightlink . '" }';
+		echo $json;
 	} else die("Invalid Format.");
 ?>

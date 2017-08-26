@@ -92,6 +92,13 @@
 				<span id="comment">//Use your Country Code (cc=YourCC)</span>
 			</div>
 			<br><br>
+			<div id="lang">JSON</div>
+			<div class="code">
+				<span id="quote">http://cdn.muzzammil.xyz/bing/bing.php?format=json&cc=US</span><br>
+				<span id="comment">//Use your Country Code (cc=YourCC)</span>
+			</div>
+			<br><br>
+			<br><br>
 			<div id="lang">Plain Text</div>
 			<div class="code">
 				<span id="quote">http://cdn.muzzammil.xyz/bing/bing.php?format=text&cc=US</span><br>
