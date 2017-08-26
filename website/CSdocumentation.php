@@ -1,6 +1,6 @@
 <?php include("head.php"); ?>
 	<div id="docmain">
-		<h1>Documentation for BingHomepageAPI V1.0.0.1 for C#</h1>
+		<h1>Documentation for BingHomepageAPI V1.2+ for C#</h1>
 		<h1>Targeted Framework: .NET 4.5</h1>
 		<h1>Namespace: BingHomepageAPI</h1>
 		<h1>Class name: BingHomepage</h1>

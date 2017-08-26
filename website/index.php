@@ -52,7 +52,7 @@
 				</p>
 			</div>
 			<br><br>
-			<a class="btn" href="BingHomepageAPI-1.0.0.1-CS.zip">Download BingHomepageAPI (latest) for C#.</a><br>
+			<a class="btn" href="BingHomepageAPI-1.2-CS.zip">Download BingHomepageAPI (latest) for C#.</a><br>
 			<br><br>
 			<a class="btn" href="?lang=php">See code for php</a>
 			<a class="btn" href="?lang=golang">See code for Go</a>
