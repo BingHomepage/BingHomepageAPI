@@ -1,11 +1,16 @@
 # BingHomepageAPI
 This API helps you to gets the current Bing Homepage details including the Image URL and Image Copyright Information and use it.
-# [Website](https://git.muzzammil.xyz/bing/?ref=github).
-# [See BingHomepageAPI in Action](https://github.com/muhammadmuzzammil1998/BingWallpaper).
-# [Documentation For C#](https://git.muzzammil.xyz/bing/CSdocumentation.php?ref=github).
-# [Documentation For Go](https://git.muzzammil.xyz/bing/GOdocumentation.php?ref=github).
-# License
+
+## Documentations:
+- [C#](https://git.muzzammil.xyz/bing/CSdocumentation.php?ref=github)
+- [Go](https://git.muzzammil.xyz/bing/GOdocumentation.php?ref=github)
+- [php](https://git.muzzammil.xyz/bing/?lang=php&ref=github)
+
+### Also see: [BingWallpaper](https://github.com/muhammadmuzzammil1998/BingWallpaper), an app I built using BingHomepageAPI in C#
+
+## License
 Licensed under MIT License by (c) Muhammad Muzzammil 2017 (http://muzzammil.xyz/)
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this 
 software and associated documentation files (the "Software"), to deal in the Software 
 without restriction, including without limitation the rights to use, copy, modify, 
