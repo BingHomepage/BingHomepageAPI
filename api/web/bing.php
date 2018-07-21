@@ -35,8 +35,10 @@
 		$xml->asXML($fname);
 		readfile($fname);
 	} else if($_GET['format'] == "text"){
+		header('Content-type: text/plain');
 		echo "url>$image\ncopyright>$copyright\ncopyrightlink>$copyrightlink";
 	} else if($_GET['format'] == "json") {
+		header('Content-type: application/json');
 		$json = '{ "url":"' . $image . '", "copyright":"' . $copyright . '", "copyrightlink":"' . $copyrightlink . '" }';
 		echo $json;
 	} else die("Invalid Format.");
