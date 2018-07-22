@@ -81,5 +81,5 @@ copyrightlink>http://www.bing.com/search?q=comet+moth&form=hpcapt&filters=HpDate
 
 | Language | Link                                                |
 | -------- | --------------------------------------------------- |
-| GoLang   | https://github.com/BingHomepage/BingHomepage.Go     |
-| C#       | https://github.com/BingHomepage/BingHomepage.CSharp |
+| GoLang   | https://binghomepage.github.io/BingHomepage.Go/     |
+| C#       | https://binghomepage.github.io/BingHomepage.CSharp/ |
