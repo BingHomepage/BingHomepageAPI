@@ -67,7 +67,7 @@ Below is the returned data from this [link](https://cdn.muzzammil.xyz/bing/bing.
 
 ### Plain Text
 
-Object description and data are seperated by a **greater-than sign** sign. On the left hand side of `>` there is description and on the right hand side, it's the data from API. You can use your native Split function here to do the job or think of a clever way do deal with this.
+Object description and data are seperated by a **greater-than** sign. On the left hand side of `>` there is description and on the right hand side, it's the data from API. You can use your native Split function here to do the job or think of a clever way do deal with this.
 
 Below is the returned data from this [link](https://cdn.muzzammil.xyz/bing/bing.php?format=text&cc=US):
 
